@@ -14,10 +14,6 @@
   line-height: 35px;
 }
 
-.border {
-  border: black dashed 2px;
-}
-
 .normal-size {
   height: 430px;
 }
@@ -26,23 +22,46 @@
   height: 860px;
 }
 
+.buttonshape {
+  border: none;
+  padding: 8px 16px 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  border-radius: 12px;
+}
+
+.titoli{
+  font-size: 52px;
+  padding: 1rem;
+  font-weight: 600;
+}
+
+.paragrafi{
+  font-size: 24px;
+  margin-top: 20px;
+  line-height: 1.4;
+}
+
+
 /*********************** Header ***********************/
 header {
   background-color: #add8e6;
   padding-top: 1rem;
-}
-
-.navbar {
-  background-color: #daa520;
+  background-image: url(./img/jumbo.png);
+  background-size: 100%;
+  
 }
 
 .flex-h {
   display: flex;
   justify-content: space-between;
-  height: 40px;
+  min-height: 65px;
   width: 70%;
   margin: 0 auto;
   margin-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 .nav-column-l {
@@ -56,11 +75,32 @@ header {
 }
 
 .nav-column-c {
-  border-left: 2px dashed;
-  border-right: 2px dashed;
   height: 38px;
   width: calc(50% - 2px);
   text-align: center;
+  word-spacing: 2rem;  
+  color: white;
+  font-size: 18px;
+}
+
+.login-button{
+  background-color: white;
+  color: black;
+  font-size: 16px;
+}
+
+.download-button{
+  font-size: 20px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.open-button{
+  font-size: 20px;
+  padding: 1rem;
+  margin-left: 1rem;
+  background-color: #222;
+  color: white;
 }
 
 /*********************** Main ***********************/
@@ -113,8 +153,9 @@ header {
 
 /* Flex Items */
 .item1 {
-  width: 50%;
-  background-color: #ee82ee;
+  max-width: 50%;
+  color: white;
+  text-align: center;
 }
 
 .item2 {
