@@ -10,16 +10,37 @@
   margin: 0 auto;
 }
 
+.padding{
+  padding: 1rem;
+}
+
+.padding-r-l{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.margin-left{
+  margin-left: 2rem;
+}
+
+.margin-right{
+  margin-right: 2rem;
+}
+
+.margin-top{
+  margin-top: 1rem;
+}
+
 .l-height {
   line-height: 35px;
 }
 
 .normal-size {
-  height: 430px;
+  min-height: 430px;
 }
 
 .big-size {
-  height: 860px;
+  min-height: 860px;
 }
 
 .buttonshape {
@@ -29,7 +50,7 @@
   text-decoration: none;
   display: inline-block;
   margin: 4px 2px;
-  border-radius: 12px;
+  border-radius: 34px;
 }
 
 .titoli{
@@ -104,11 +125,26 @@ header {
 }
 
 /*********************** Main ***********************/
-/* Colori */
-.blue {
-  background-color: #00008b;
+.stars{
+  background-image: url(./img/stars.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  min-height: 50px;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 120px;
 }
 
+.download-button2{
+  background-color: #7289da;
+  color: white;
+  font-size: 20px;
+  padding: 1rem;
+  margin-bottom: 3rem;   
+}
+
+/* Colori */
 .white {
   background-color: white;
 }
@@ -149,6 +185,7 @@ header {
 
 .flex5 {
   display: flex;
+  justify-content: space-between;
 }
 
 /* Flex Items */
@@ -159,54 +196,76 @@ header {
 }
 
 .item2 {
-  background-color: #1e90ff;
   width: 60%;
+  align-self: center;
 }
 
 .item3 {
-  background-color: #ffc0cb;
   width: 40%;
 }
 
 .item4 {
-  background-color: #228b22;
   width: 100%;
+  text-align: center;
 }
 
 .item5 {
   width: 30%;
-  background-color: #f08080;
 }
 
 .item6 {
-  background-color: #20b2aa;
   width: 70%;
 }
 
 .item-figlio {
-  width: calc(100% / 4);
-  border: white dashed 2px;
+  min-width: calc(100% / 4);
 }
 
 /*********************** Footer ***********************/
 hr {
-  color: #555759;
+  margin-bottom: 1rem;
+  border-color: #7289da;
 }
 
 .bot-column {
-  background-color: #fbafbd;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding: 5px;
   align-self: center;
 }
 
 .flex-f {
   display: flex;
   justify-content: space-between;
-  height: 40px;
-  width: 70%;
+  min-height: 40px;
+  width: 100%;
   margin: 0 auto;
-  margin-top: 1rem;
-  background-color: #7fffd4;
+  padding-bottom: 3rem;
+}
+
+.register-button{
+  background-color: #7289da;
+  color: white;
+  margin: 8px;
+}
+
+.f-title{
+  font-size: 38px;
+  font-weight:600;
+}
+
+.it-paragraph{
+  color: white;
+  line-height: 1px;
+}
+
+.discord-blue{
+  color: #7289da;
+}
+
+.ita{
+  width: 8%;
+}
+
+.f-paragraph{
+  color: white;
 }
