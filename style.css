@@ -5,6 +5,22 @@
   padding: 0;
 }
 
+html {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.align-right{
+  text-align: right;
+}
+
+.align-center{
+  text-align: center;
+}
+
 .container {
   width: 70%;
   margin: 0 auto;
@@ -65,6 +81,18 @@
   line-height: 1.4;
 }
 
+/* Colori */
+.white {
+  background-color: white;
+}
+
+.grey {
+  background-color: #d3d3d3;
+}
+
+.black {
+  background-color: #222;
+}
 
 /*********************** Header ***********************/
 header {
@@ -72,7 +100,6 @@ header {
   padding-top: 1rem;
   background-image: url(./img/jumbo.png);
   background-size: 100%;
-  
 }
 
 .flex-h {
@@ -85,23 +112,30 @@ header {
   padding-top: 1rem;
 }
 
-.nav-column-l {
-  height: 38px;
-  margin-left: 6px;
+.flexbar{
+  display: flex;
+  justify-content: space-between;
 }
 
-.nav-column-r {
+.links{
+  text-decoration: none;
+  color: white;
+  margin: 6px;
+}
+
+.nav-column {
   height: 38px;
-  margin-right: 6px;
+  margin: 6px;
+  width: 15%;
 }
 
 .nav-column-c {
   height: 38px;
-  width: calc(50% - 2px);
-  text-align: center;
-  word-spacing: 2rem;  
+  width: 60%;
+  text-align: center;  
   color: white;
   font-size: 18px;
+  gap: 1rem;
 }
 
 .login-button{
@@ -113,7 +147,8 @@ header {
 .download-button{
   font-size: 20px;
   padding: 1rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
 }
 
 .open-button{
@@ -144,17 +179,19 @@ header {
   margin-bottom: 3rem;   
 }
 
-/* Colori */
-.white {
-  background-color: white;
+.waveup{
+  background-image: url(./img/wave.svg);
+  height: 5rem;
+  width: auto;
+  opacity: 0.18;
 }
 
-.grey {
-  background-color: #d3d3d3;
-}
-
-.black {
-  background-color: #222;
+.wavedown{
+  background-image: url(./img/wave.svg);
+  height: 5rem;
+  width: auto;
+  opacity: 0.18;
+  transform: rotate(3.142rad);
 }
 
 /* Flex Containers */
